@@ -1,0 +1,15 @@
+import numpy as np 
+import pandas as pd 
+import matplotlib.pyplot as plt   
+import seaborn as sns
+from sklearn.model_selection import train_test_split
+import numpy as np
+from sklearn import metrics
+from sklearn.metrics import recall_score
+from imblearn.over_sampling import SMOTE
+import os
+for dirname, _, filenames in os.walk('input'):
+    for filename in filenames:
+        print(os.path.join(dirname, filename))
+pima_df = pd.read_csv("")
+pima_df.head()
